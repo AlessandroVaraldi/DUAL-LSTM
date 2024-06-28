@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../HLSTM.gen/sources_1/ip/wb_RAM_1/wb_RAM_sim_netlist.vhdl" \
+
+# Do not sort compile order
+nosort

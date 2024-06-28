@@ -1,0 +1,41 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../HLSTM.gen/sources_1/ip/tanh_lut/tanh_lut_sim_netlist.vhdl" \
+"../../../../HLSTM.gen/sources_1/ip/counter/sim/counter.vhd" \
+"../../../../HLSTM.gen/sources_1/ip/w_RAM/w_RAM_sim_netlist.vhdl" \
+"../../../../HLSTM.gen/sources_1/ip/x_RAM/x_RAM_sim_netlist.vhdl" \
+"../../../../HLSTM.srcs/sources_1/new/myTypes.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/LSTM_layer.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/LSTM_net.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/lzc_wire.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/fp_wire.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/fp_func.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/cnv_f2i.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/dff_chain.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/dflipflop.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/fp_cmp.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/fp_cvt.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/fp_exe.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/fp_ext.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/fp_fma.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/lzc_lib.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/fp_lib.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/fp_max.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/fp_rnd.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/fp_sgnj.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/fp_unit.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/lzc_128.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/lzc_16.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/lzc_32.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/lzc_4.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/lzc_64.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/fpu/lzc_8.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/mac_f32.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/out_layer.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/register.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/shift_register.vhd" \
+"../../../../HLSTM.srcs/sources_1/new/sum_f32.vhd" \
+"../../../../HLSTM.srcs/sim_1/new/net_test.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="net_test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fp_func" />
+            <top_module name="fp_lib" />
+            <top_module name="fp_wire" />
+            <top_module name="lzc_lib" />
+            <top_module name="lzc_wire" />
+            <top_module name="mytypes" />
+            <top_module name="net_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="39,079.400 ns"></ZoomStartTime>
+      <ZoomEndTime time="43,574.401 ns"></ZoomEndTime>
+      <Cursor1Time time="28,199.400 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="186"></NameColumnWidth>
+      <ValueColumnWidth column_width="147"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="141" />
+   <wave_markers>
+      <marker time="25020000" label="" />
+      <marker time="25249880" label="" />
+      <marker time="2670000" label="" />
+      <marker time="27520000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/net_test/u0/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/input" type="array">
+      <obj_property name="ElementShortName">input[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/w_ad0" type="array">
+      <obj_property name="ElementShortName">w_ad0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">w_ad0[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/w_ad" type="array">
+      <obj_property name="ElementShortName">w_ad[4:0]</obj_property>
+      <obj_property name="ObjectShortName">w_ad[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/w_arr" type="array">
+      <obj_property name="ElementShortName">w_arr[127:0]</obj_property>
+      <obj_property name="ObjectShortName">w_arr[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/d_out" type="array">
+      <obj_property name="ElementShortName">d_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_out[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/rd_in" type="logic">
+      <obj_property name="ElementShortName">rd_in</obj_property>
+      <obj_property name="ObjectShortName">rd_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/cycle" type="logic">
+      <obj_property name="ElementShortName">cycle</obj_property>
+      <obj_property name="ObjectShortName">cycle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/clear" type="logic">
+      <obj_property name="ElementShortName">clear</obj_property>
+      <obj_property name="ObjectShortName">clear</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/LSTM_st" type="logic">
+      <obj_property name="ElementShortName">LSTM_st</obj_property>
+      <obj_property name="ObjectShortName">LSTM_st</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/LSTM_do" type="logic">
+      <obj_property name="ElementShortName">LSTM_do</obj_property>
+      <obj_property name="ObjectShortName">LSTM_do</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/weight" type="array">
+      <obj_property name="ElementShortName">weight</obj_property>
+      <obj_property name="ObjectShortName">weight</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/h_out" type="array">
+      <obj_property name="ElementShortName">h_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">h_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/h_in" type="array">
+      <obj_property name="ElementShortName">h_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">h_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/outl_st" type="logic">
+      <obj_property name="ElementShortName">outl_st</obj_property>
+      <obj_property name="ObjectShortName">outl_st</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/outl_do" type="logic">
+      <obj_property name="ElementShortName">outl_do</obj_property>
+      <obj_property name="ObjectShortName">outl_do</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/reg_cl" type="logic">
+      <obj_property name="ElementShortName">reg_cl</obj_property>
+      <obj_property name="ObjectShortName">reg_cl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/reg_en" type="logic">
+      <obj_property name="ElementShortName">reg_en</obj_property>
+      <obj_property name="ObjectShortName">reg_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/reg_in" type="array">
+      <obj_property name="ElementShortName">reg_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/reg_re" type="array">
+      <obj_property name="ElementShortName">reg_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_re[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/shf_en" type="logic">
+      <obj_property name="ElementShortName">shf_en</obj_property>
+      <obj_property name="ObjectShortName">shf_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/x" type="array">
+      <obj_property name="ElementShortName">x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/x0" type="array">
+      <obj_property name="ElementShortName">x0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x0[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/x1" type="array">
+      <obj_property name="ElementShortName">x1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/x2" type="array">
+      <obj_property name="ElementShortName">x2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/x3" type="array">
+      <obj_property name="ElementShortName">x3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x3[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/x4" type="array">
+      <obj_property name="ElementShortName">x4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x4[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/x5" type="array">
+      <obj_property name="ElementShortName">x5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x5[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/x6" type="array">
+      <obj_property name="ElementShortName">x6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x6[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/x7" type="array">
+      <obj_property name="ElementShortName">x7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x7[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/x8" type="array">
+      <obj_property name="ElementShortName">x8[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x8[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/x9" type="array">
+      <obj_property name="ElementShortName">x9[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x9[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/cnt_en" type="logic">
+      <obj_property name="ElementShortName">cnt_en</obj_property>
+      <obj_property name="ObjectShortName">cnt_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/cnt_cl" type="logic">
+      <obj_property name="ElementShortName">cnt_cl</obj_property>
+      <obj_property name="ObjectShortName">cnt_cl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/chain_st" type="logic">
+      <obj_property name="ElementShortName">chain_st</obj_property>
+      <obj_property name="ObjectShortName">chain_st</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/q" type="array">
+      <obj_property name="ElementShortName">q[3:0]</obj_property>
+      <obj_property name="ObjectShortName">q[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/p" type="array">
+      <obj_property name="ElementShortName">p[1:0]</obj_property>
+      <obj_property name="ObjectShortName">p[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/clear" type="logic">
+      <obj_property name="ElementShortName">clear</obj_property>
+      <obj_property name="ObjectShortName">clear</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/input" type="array">
+      <obj_property name="ElementShortName">input[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/weight" type="array">
+      <obj_property name="ElementShortName">weight</obj_property>
+      <obj_property name="ObjectShortName">weight</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/h_out" type="array">
+      <obj_property name="ElementShortName">h_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">h_out[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/maca1" type="array">
+      <obj_property name="ElementShortName">maca1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">maca1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/maca2" type="array">
+      <obj_property name="ElementShortName">maca2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">maca2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/maca3" type="array">
+      <obj_property name="ElementShortName">maca3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">maca3[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/macao" type="array">
+      <obj_property name="ElementShortName">macao[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macao[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/macb1" type="array">
+      <obj_property name="ElementShortName">macb1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macb1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/macb2" type="array">
+      <obj_property name="ElementShortName">macb2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macb2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/macb3" type="array">
+      <obj_property name="ElementShortName">macb3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macb3[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/macbo" type="array">
+      <obj_property name="ElementShortName">macbo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macbo[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/xmac" type="array">
+      <obj_property name="ElementShortName">xmac[31:0]</obj_property>
+      <obj_property name="ObjectShortName">xmac[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/hmac" type="array">
+      <obj_property name="ElementShortName">hmac[31:0]</obj_property>
+      <obj_property name="ObjectShortName">hmac[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/smac" type="array">
+      <obj_property name="ElementShortName">smac[31:0]</obj_property>
+      <obj_property name="ObjectShortName">smac[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/tanh" type="array">
+      <obj_property name="ElementShortName">tanh[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tanh[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/sigm" type="array">
+      <obj_property name="ElementShortName">sigm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sigm[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/s_new" type="array">
+      <obj_property name="ElementShortName">s_new[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_new[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/sum" type="array">
+      <obj_property name="ElementShortName">sum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/modop" type="logic">
+      <obj_property name="ElementShortName">modop</obj_property>
+      <obj_property name="ObjectShortName">modop</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/fpu1" type="array">
+      <obj_property name="ElementShortName">fpu1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fpu1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/fpu2" type="array">
+      <obj_property name="ElementShortName">fpu2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fpu2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/fpuo" type="array">
+      <obj_property name="ElementShortName">fpuo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fpuo[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/mul" type="array">
+      <obj_property name="ElementShortName">mul[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mul[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/reg_cl" type="logic">
+      <obj_property name="ElementShortName">reg_cl</obj_property>
+      <obj_property name="ObjectShortName">reg_cl</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/rea_en" type="logic">
+      <obj_property name="ElementShortName">rea_en</obj_property>
+      <obj_property name="ObjectShortName">rea_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/rea_in" type="array">
+      <obj_property name="ElementShortName">rea_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rea_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/rea_re" type="array">
+      <obj_property name="ElementShortName">rea_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rea_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/reb_en" type="logic">
+      <obj_property name="ElementShortName">reb_en</obj_property>
+      <obj_property name="ObjectShortName">reb_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/reb_in" type="array">
+      <obj_property name="ElementShortName">reb_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reb_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/reb_re" type="array">
+      <obj_property name="ElementShortName">reb_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reb_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/rec_en" type="logic">
+      <obj_property name="ElementShortName">rec_en</obj_property>
+      <obj_property name="ObjectShortName">rec_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/rec_in" type="array">
+      <obj_property name="ElementShortName">rec_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rec_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/rec_re" type="array">
+      <obj_property name="ElementShortName">rec_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rec_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/ref_en" type="logic">
+      <obj_property name="ElementShortName">ref_en</obj_property>
+      <obj_property name="ObjectShortName">ref_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/ref_in" type="array">
+      <obj_property name="ElementShortName">ref_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ref_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/ref_re" type="array">
+      <obj_property name="ElementShortName">ref_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ref_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/rei_en" type="logic">
+      <obj_property name="ElementShortName">rei_en</obj_property>
+      <obj_property name="ObjectShortName">rei_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/rei_in" type="array">
+      <obj_property name="ElementShortName">rei_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rei_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/rei_re" type="array">
+      <obj_property name="ElementShortName">rei_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rei_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/rez_en" type="logic">
+      <obj_property name="ElementShortName">rez_en</obj_property>
+      <obj_property name="ObjectShortName">rez_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/rez_in" type="array">
+      <obj_property name="ElementShortName">rez_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rez_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/rez_re" type="array">
+      <obj_property name="ElementShortName">rez_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rez_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/reo_en" type="logic">
+      <obj_property name="ElementShortName">reo_en</obj_property>
+      <obj_property name="ObjectShortName">reo_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/reo_cl" type="logic">
+      <obj_property name="ElementShortName">reo_cl</obj_property>
+      <obj_property name="ObjectShortName">reo_cl</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/reo_in" type="array">
+      <obj_property name="ElementShortName">reo_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reo_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/reo_re" type="array">
+      <obj_property name="ElementShortName">reo_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reo_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/reh_en" type="logic">
+      <obj_property name="ElementShortName">reh_en</obj_property>
+      <obj_property name="ObjectShortName">reh_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/reh_in" type="array">
+      <obj_property name="ElementShortName">reh_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reh_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/reh_re" type="array">
+      <obj_property name="ElementShortName">reh_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reh_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/res_en" type="logic">
+      <obj_property name="ElementShortName">res_en</obj_property>
+      <obj_property name="ObjectShortName">res_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/res_in" type="array">
+      <obj_property name="ElementShortName">res_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">res_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/res_re" type="array">
+      <obj_property name="ElementShortName">res_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">res_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/lut_rd" type="logic">
+      <obj_property name="ElementShortName">lut_rd</obj_property>
+      <obj_property name="ObjectShortName">lut_rd</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/lut_wr" type="logic">
+      <obj_property name="ElementShortName">lut_wr</obj_property>
+      <obj_property name="ObjectShortName">lut_wr</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/lut_ad" type="array">
+      <obj_property name="ElementShortName">lut_ad[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lut_ad[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/lut_re" type="array">
+      <obj_property name="ElementShortName">lut_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lut_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/sgn" type="array">
+      <obj_property name="ElementShortName">sgn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sgn[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u0/q" type="array">
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/clear" type="logic">
+      <obj_property name="ElementShortName">clear</obj_property>
+      <obj_property name="ObjectShortName">clear</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/input" type="array">
+      <obj_property name="ElementShortName">input[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/d_out" type="array">
+      <obj_property name="ElementShortName">d_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_out[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/maca1" type="array">
+      <obj_property name="ElementShortName">maca1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">maca1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/maca2" type="array">
+      <obj_property name="ElementShortName">maca2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">maca2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/maca3" type="array">
+      <obj_property name="ElementShortName">maca3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">maca3[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macao" type="array">
+      <obj_property name="ElementShortName">macao[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macao[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macb1" type="array">
+      <obj_property name="ElementShortName">macb1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macb1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macb2" type="array">
+      <obj_property name="ElementShortName">macb2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macb2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macb3" type="array">
+      <obj_property name="ElementShortName">macb3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macb3[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macbo" type="array">
+      <obj_property name="ElementShortName">macbo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macbo[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macc1" type="array">
+      <obj_property name="ElementShortName">macc1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macc1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macc2" type="array">
+      <obj_property name="ElementShortName">macc2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macc2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macc3" type="array">
+      <obj_property name="ElementShortName">macc3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macc3[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macco" type="array">
+      <obj_property name="ElementShortName">macco[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macco[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macd1" type="array">
+      <obj_property name="ElementShortName">macd1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macd1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macd2" type="array">
+      <obj_property name="ElementShortName">macd2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macd2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macd3" type="array">
+      <obj_property name="ElementShortName">macd3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macd3[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/macdo" type="array">
+      <obj_property name="ElementShortName">macdo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">macdo[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/reg_cl" type="logic">
+      <obj_property name="ElementShortName">reg_cl</obj_property>
+      <obj_property name="ObjectShortName">reg_cl</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/rea_en" type="logic">
+      <obj_property name="ElementShortName">rea_en</obj_property>
+      <obj_property name="ObjectShortName">rea_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/rea_in" type="array">
+      <obj_property name="ElementShortName">rea_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rea_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/rea_re" type="array">
+      <obj_property name="ElementShortName">rea_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rea_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/reb_en" type="logic">
+      <obj_property name="ElementShortName">reb_en</obj_property>
+      <obj_property name="ObjectShortName">reb_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/reb_in" type="array">
+      <obj_property name="ElementShortName">reb_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reb_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/reb_re" type="array">
+      <obj_property name="ElementShortName">reb_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reb_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/rec_en" type="logic">
+      <obj_property name="ElementShortName">rec_en</obj_property>
+      <obj_property name="ObjectShortName">rec_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/rec_in" type="array">
+      <obj_property name="ElementShortName">rec_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rec_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/rec_re" type="array">
+      <obj_property name="ElementShortName">rec_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rec_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/red_en" type="logic">
+      <obj_property name="ElementShortName">red_en</obj_property>
+      <obj_property name="ObjectShortName">red_en</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/red_in" type="array">
+      <obj_property name="ElementShortName">red_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">red_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/red_re" type="array">
+      <obj_property name="ElementShortName">red_re[31:0]</obj_property>
+      <obj_property name="ObjectShortName">red_re[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/net_test/u0/u1/q" type="array">
+      <obj_property name="ElementShortName">q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

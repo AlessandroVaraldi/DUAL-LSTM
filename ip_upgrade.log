@@ -1,0 +1,100 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Jun 17 12:04:42 2024
+| Host         : LAPTOP-OPG22R0F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcsg324-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'tanh_lut'
+
+1. Summary
+----------
+
+SUCCESS in the update of tanh_lut (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Jun  6 12:12:59 2024
+| Host         : LAPTOP-OPG22R0F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a12tcpg238-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'wb_RAM'
+
+1. Summary
+----------
+
+SUCCESS in the update of wb_RAM (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Jun  6 12:12:45 2024
+| Host         : LAPTOP-OPG22R0F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a12tcpg238-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'in_RAM'
+
+1. Summary
+----------
+
+SUCCESS in the update of in_RAM (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Jun  6 12:12:39 2024
+| Host         : LAPTOP-OPG22R0F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a12tcpg238-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'tanh_lut'
+
+1. Summary
+----------
+
+SUCCESS in the update of tanh_lut (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Jun  6 12:12:30 2024
+| Host         : LAPTOP-OPG22R0F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a12tcpg238-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'counter'
+
+1. Summary
+----------
+
+SUCCESS in the update of counter (xilinx.com:ip:c_counter_binary:12.0 (Rev. 19)) to current project options.
+

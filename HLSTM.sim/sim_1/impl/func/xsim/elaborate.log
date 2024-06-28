@@ -1,0 +1,14 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Network_test_func_impl xil_defaultlib.Network_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'in_ram' remains a black box since it has no binding entity [C:/Users/aleva/Documents/Projects/HLSTM/HLSTM.srcs/sim_1/new/Network_test.vhd:157]
+WARNING: [VRFC 10-4940] 'wb_ram' remains a black box since it has no binding entity [C:/Users/aleva/Documents/Projects/HLSTM/HLSTM.srcs/sim_1/new/Network_test.vhd:167]
+ERROR: [VRFC 10-3290] entity port 'input' does not match with type signed of component port [C:/Users/aleva/Documents/Projects/HLSTM/HLSTM.srcs/sim_1/new/Network_test.vhd:47]
+ERROR: [VRFC 10-3290] entity port 'b_ad' does not match with type unsigned of component port [C:/Users/aleva/Documents/Projects/HLSTM/HLSTM.srcs/sim_1/new/Network_test.vhd:48]
+ERROR: [VRFC 10-3290] entity port 'w_ad' does not match with type unsigned of component port [C:/Users/aleva/Documents/Projects/HLSTM/HLSTM.srcs/sim_1/new/Network_test.vhd:49]
+ERROR: [VRFC 10-3290] entity port 'output' does not match with type signed of component port [C:/Users/aleva/Documents/Projects/HLSTM/HLSTM.srcs/sim_1/new/Network_test.vhd:51]
+ERROR: [VRFC 10-718] formal port <wbxh> does not exist in entity <Network>.  Please compare the definition of block <Network> to its component declaration and its instantion to detect the mismatch. [C:/Users/aleva/Documents/Projects/HLSTM/HLSTM.srcs/sim_1/new/Network_test.vhd:50]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit network_test in library work failed.

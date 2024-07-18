@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use IEEE.std_logic_misc.all;
 
-use work.myTypes.all;
+use work.package_float32.all;
     
 entity out_layer is
     port
@@ -33,11 +33,11 @@ entity out_layer is
 		reset			: in  std_logic;
 		clear			: in  std_logic;
 		start			: in  std_logic;
-		input			: in  data32;
+		input			: in  data;
 		--b_ad			: in  unsigned (4 downto 0);
 		--w_ad			: out unsigned (4 downto 0);
 		--wbxh			: in  weight32;
-		d_out			: out data32;
+		d_out			: out data;
 		done			: out std_logic
 	);
 end out_layer;
@@ -59,10 +59,10 @@ component mac_f32 is
 	);
 end component;
 
-signal maca1,maca2,maca3,macao: data32 := (others => '0');
-signal macb1,macb2,macb3,macbo: data32 := (others => '0');
-signal macc1,macc2,macc3,macco: data32 := (others => '0');
-signal macd1,macd2,macd3,macdo: data32 := (others => '0');
+signal maca1,maca2,maca3,macao: data := (others => '0');
+signal macb1,macb2,macb3,macbo: data := (others => '0');
+signal macc1,macc2,macc3,macco: data := (others => '0');
+signal macd1,macd2,macd3,macdo: data := (others => '0');
 
 component nregister is 
 	port 
@@ -79,16 +79,16 @@ end component;
 signal reg_cl: std_logic := '0';
 
 signal rea_en: std_logic := '0';
-signal rea_in,rea_re: data32 := (others => '0');
+signal rea_in,rea_re: data := (others => '0');
 
 signal reb_en: std_logic := '0';
-signal reb_in,reb_re: data32 := (others => '0');
+signal reb_in,reb_re: data := (others => '0');
 
 signal rec_en: std_logic := '0';
-signal rec_in,rec_re: data32 := (others => '0');
+signal rec_in,rec_re: data := (others => '0');
 
 signal red_en: std_logic := '0';
-signal red_in,red_re: data32 := (others => '0');
+signal red_in,red_re: data := (others => '0');
 
 component dff_chain is
 	generic (

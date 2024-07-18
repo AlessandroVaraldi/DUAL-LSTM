@@ -1,0 +1,548 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:57:50 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Tue Jul 16 14:49:41 2024
+# Process ID: 71548
+# Current directory: /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/synth_1
+# Command line: vivado -log LSTM_net_i32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LSTM_net_i32.tcl
+# Log file: /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/synth_1/LSTM_net_i32.vds
+# Journal file: /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/synth_1/vivado.jou
+# Running On        :vivobook
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04 LTS
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+# CPU Frequency     :3543.350 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :12223 MB
+# Swap memory       :4294 MB
+# Total Virtual     :16517 MB
+# Available Virtual :11399 MB
+#-----------------------------------------------------------
+source LSTM_net_i32.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/utils_1/imports/synth_1/Network.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/utils_1/imports/synth_1/Network.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top LSTM_net_i32 -part xc7a35tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-3
+INFO: [Device 21-9227] Part: xc7a35tcsg324-3 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 71593
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2136.051 ; gain = 411.660 ; free physical = 213 ; free virtual = 9483
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'LSTM_net_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_net_i32.vhd:44]
+INFO: [Synth 8-3491] module 'counter' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/synth_1/.Xil/Vivado-71548-vivobook/realtime/counter_stub.vhdl:6' bound to instance 'c0' of component 'counter' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_net_i32.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'counter' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/synth_1/.Xil/Vivado-71548-vivobook/realtime/counter_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'shift_register' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/shift_register.vhd:26' bound to instance 'm1' of component 'shift_register' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_net_i32.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'shift_register' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/shift_register.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'shift_register' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/shift_register.vhd:47]
+INFO: [Synth 8-3491] module 'LSTM_layer_i32' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:28' bound to instance 'u0' of component 'LSTM_layer_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_net_i32.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'LSTM_layer_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:42]
+INFO: [Synth 8-3491] module 'mac_i32' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/mac_i32.vhd:26' bound to instance 'u0' of component 'mac_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'mac_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/mac_i32.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'mac_i32' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/mac_i32.vhd:41]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r0' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'nregister' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:38]
+INFO: [Synth 8-3491] module 'mac_i32' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/mac_i32.vhd:26' bound to instance 'u1' of component 'mac_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:126]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r1' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:142]
+INFO: [Synth 8-3491] module 'sum_i32' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/sum_i32.vhd:26' bound to instance 'u2' of component 'sum_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'sum_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/sum_i32.vhd:41]
+WARNING: [Synth 8-614] signal 'clken' is read in the process but is not in the sensitivity list [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/sum_i32.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'sum_i32' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/sum_i32.vhd:41]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r2' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:173]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dff_chain' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:25' bound to instance 'f0' of component 'dff_chain' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'dff_chain' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:37]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'dflipflop' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:35]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'dff_chain' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:37]
+INFO: [Synth 8-3491] module 'cnv_i32' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/cnv_i32.vhd:31' bound to instance 'u3' of component 'cnv_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'cnv_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/cnv_i32.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'cnv_i32' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/cnv_i32.vhd:45]
+INFO: [Synth 8-3491] module 'tanh_lut' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/synth_1/.Xil/Vivado-71548-vivobook/realtime/tanh_lut_stub.vhdl:6' bound to instance 'm0' of component 'tanh_lut' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'tanh_lut' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/synth_1/.Xil/Vivado-71548-vivobook/realtime/tanh_lut_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'cnv_i32' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/cnv_i32.vhd:31' bound to instance 'u4' of component 'cnv_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:212]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r3' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:224]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r4' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:236]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r5' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:248]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r6' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:260]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r7' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:272]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r8' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:284]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'dff_chain' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:25' bound to instance 'f1' of component 'dff_chain' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:296]
+INFO: [Synth 8-638] synthesizing module 'dff_chain__parameterized1' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:37]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'dff_chain__parameterized1' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'LSTM_layer_i32' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_layer_i32.vhd:42]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r0' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_net_i32.vhd:187]
+INFO: [Synth 8-3491] module 'out_layer_i32' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/out_layer_i32.vhd:29' bound to instance 'u1' of component 'out_layer_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_net_i32.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'out_layer_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/out_layer_i32.vhd:45]
+INFO: [Synth 8-3491] module 'mac_i32' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/mac_i32.vhd:26' bound to instance 'u0' of component 'mac_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/out_layer_i32.vhd:117]
+INFO: [Synth 8-3491] module 'mac_i32' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/mac_i32.vhd:26' bound to instance 'u2' of component 'mac_i32' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/out_layer_i32.vhd:133]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r0' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/out_layer_i32.vhd:144]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r1' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/out_layer_i32.vhd:154]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r2' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/out_layer_i32.vhd:164]
+INFO: [Synth 8-3491] module 'nregister' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/register.vhd:26' bound to instance 'r3' of component 'nregister' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/out_layer_i32.vhd:174]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'dff_chain' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:25' bound to instance 'f1' of component 'dff_chain' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/out_layer_i32.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'dff_chain__parameterized3' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:37]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'dff_chain__parameterized3' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'out_layer_i32' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/out_layer_i32.vhd:45]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'dff_chain' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:25' bound to instance 'f0' of component 'dff_chain' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_net_i32.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'dff_chain__parameterized5' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:37]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'dff_chain__parameterized5' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:37]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'dff_chain' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:25' bound to instance 'f1' of component 'dff_chain' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_net_i32.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'dff_chain__parameterized7' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:37]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-3491] module 'dflipflop' declared at '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dflipflop.vhd:25' bound to instance 'dff' of component 'dflipflop' [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'dff_chain__parameterized7' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/dff_chain.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'LSTM_net_i32' (0#1) [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/LSTM_net_i32.vhd:44]
+WARNING: [Synth 8-3848] Net flags in module/entity mac_i32 does not have driver. [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/mac_i32.vhd:36]
+WARNING: [Synth 8-3848] Net ready in module/entity mac_i32 does not have driver. [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/mac_i32.vhd:37]
+WARNING: [Synth 8-3848] Net flags in module/entity sum_i32 does not have driver. [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/sum_i32.vhd:36]
+WARNING: [Synth 8-3848] Net ready in module/entity sum_i32 does not have driver. [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/sum_i32.vhd:37]
+WARNING: [Synth 8-3848] Net flags in module/entity cnv_i32 does not have driver. [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/cnv_i32.vhd:40]
+WARNING: [Synth 8-3848] Net ready in module/entity cnv_i32 does not have driver. [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/sources_1/new/cnv_i32.vhd:41]
+WARNING: [Synth 8-7129] Port flags[4] in module mac_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[3] in module mac_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[2] in module mac_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[1] in module mac_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[0] in module mac_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ready in module mac_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[4] in module cnv_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[3] in module cnv_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[2] in module cnv_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[1] in module cnv_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[0] in module cnv_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ready in module cnv_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clken in module cnv_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[4] in module sum_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[3] in module sum_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[2] in module sum_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[1] in module sum_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags[0] in module sum_i32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ready in module sum_i32 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2218.020 ; gain = 493.629 ; free physical = 262 ; free virtual = 9409
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2232.863 ; gain = 508.473 ; free physical = 259 ; free virtual = 9405
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2232.863 ; gain = 508.473 ; free physical = 259 ; free virtual = 9405
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2236.863 ; gain = 0.000 ; free physical = 259 ; free virtual = 9405
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.gen/sources_1/ip/counter/counter/c_counter_binary_0_in_context.xdc] for cell 'c0'
+Finished Parsing XDC File [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.gen/sources_1/ip/counter/counter/c_counter_binary_0_in_context.xdc] for cell 'c0'
+Parsing XDC File [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.gen/sources_1/ip/tanh_lut/tanh_lut/tanh_lut_in_context.xdc] for cell 'u0/m0'
+Finished Parsing XDC File [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.gen/sources_1/ip/tanh_lut/tanh_lut/tanh_lut_in_context.xdc] for cell 'u0/m0'
+Parsing XDC File [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/constrs_1/new/XDC1.xdc]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'clock' relative to clock 'clock' defined on the same pin is not supported, ignoring it [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/constrs_1/new/XDC1.xdc:3]
+Finished Parsing XDC File [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/constrs_1/new/XDC1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/constrs_1/new/XDC1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LSTM_net_i32_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LSTM_net_i32_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2385.645 ; gain = 0.000 ; free physical = 227 ; free virtual = 9383
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2385.645 ; gain = 0.000 ; free physical = 227 ; free virtual = 9383
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'c0' at clock pin 'CLK' is different from the actual clock period '20.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2385.645 ; gain = 661.254 ; free physical = 224 ; free virtual = 9380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2393.648 ; gain = 669.258 ; free physical = 224 ; free virtual = 9380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u0/m0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2393.648 ; gain = 669.258 ; free physical = 224 ; free virtual = 9380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.srcs/utils_1/imports/synth_1/Network.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2393.648 ; gain = 669.258 ; free physical = 223 ; free virtual = 9380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2393.648 ; gain = 669.258 ; free physical = 223 ; free virtual = 9380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2393.648 ; gain = 669.258 ; free physical = 222 ; free virtual = 9378
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 31    
+	                1 Bit    Registers := 57    
++---Multipliers : 
+	              32x32  Multipliers := 5     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 30    
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP u0/mul, operation Mode is: A*B.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: Generating DSP u0/mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: Generating DSP u0/mul, operation Mode is: A*B.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: Generating DSP u0/mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: Generating DSP u1/mul, operation Mode is: A*B.
+DSP Report: operator u1/mul is absorbed into DSP u1/mul.
+DSP Report: operator u1/mul is absorbed into DSP u1/mul.
+DSP Report: Generating DSP u1/mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u1/mul is absorbed into DSP u1/mul.
+DSP Report: operator u1/mul is absorbed into DSP u1/mul.
+DSP Report: Generating DSP u1/mul, operation Mode is: A*B.
+DSP Report: operator u1/mul is absorbed into DSP u1/mul.
+DSP Report: operator u1/mul is absorbed into DSP u1/mul.
+DSP Report: Generating DSP u1/mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u1/mul is absorbed into DSP u1/mul.
+DSP Report: operator u1/mul is absorbed into DSP u1/mul.
+DSP Report: Generating DSP u2/mul, operation Mode is: A*B.
+DSP Report: operator u2/mul is absorbed into DSP u2/mul.
+DSP Report: operator u2/mul is absorbed into DSP u2/mul.
+DSP Report: Generating DSP u2/mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u2/mul is absorbed into DSP u2/mul.
+DSP Report: operator u2/mul is absorbed into DSP u2/mul.
+DSP Report: Generating DSP u2/mul, operation Mode is: A*B.
+DSP Report: operator u2/mul is absorbed into DSP u2/mul.
+DSP Report: operator u2/mul is absorbed into DSP u2/mul.
+DSP Report: Generating DSP u2/mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u2/mul is absorbed into DSP u2/mul.
+DSP Report: operator u2/mul is absorbed into DSP u2/mul.
+DSP Report: Generating DSP u0/mul, operation Mode is: A*B.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: Generating DSP u0/mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: Generating DSP u0/mul, operation Mode is: A*B.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: Generating DSP u0/mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+DSP Report: operator u0/mul is absorbed into DSP u0/mul.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2393.648 ; gain = 669.258 ; free physical = 190 ; free virtual = 9353
+---------------------------------------------------------------------------------
+ Sort Area is  u0/mul_0 : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  u0/mul_0 : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  u0/mul_a : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  u0/mul_a : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  u1/mul_6 : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  u1/mul_6 : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  u2/mul_8 : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  u2/mul_8 : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  u0/mul_3 : 0 0 : 2634 5119 : Used 1 time 0
+ Sort Area is  u0/mul_3 : 0 1 : 2485 5119 : Used 1 time 0
+ Sort Area is  u0/mul_b : 0 0 : 2634 5119 : Used 1 time 0
+ Sort Area is  u0/mul_b : 0 1 : 2485 5119 : Used 1 time 0
+ Sort Area is  u1/mul_7 : 0 0 : 2634 5119 : Used 1 time 0
+ Sort Area is  u1/mul_7 : 0 1 : 2485 5119 : Used 1 time 0
+ Sort Area is  u2/mul_9 : 0 0 : 2634 5119 : Used 1 time 0
+ Sort Area is  u2/mul_9 : 0 1 : 2485 5119 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|LSTM_layer_i32 | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|out_layer_i32  | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|out_layer_i32  | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|out_layer_i32  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|out_layer_i32  | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2393.648 ; gain = 669.258 ; free physical = 184 ; free virtual = 9348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2401.648 ; gain = 677.258 ; free physical = 170 ; free virtual = 9335
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2401.648 ; gain = 677.258 ; free physical = 170 ; free virtual = 9335
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2401.648 ; gain = 677.258 ; free physical = 174 ; free virtual = 9339
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2401.648 ; gain = 677.258 ; free physical = 174 ; free virtual = 9339
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2401.648 ; gain = 677.258 ; free physical = 175 ; free virtual = 9340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2401.648 ; gain = 677.258 ; free physical = 175 ; free virtual = 9340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2401.648 ; gain = 677.258 ; free physical = 175 ; free virtual = 9340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2401.648 ; gain = 677.258 ; free physical = 175 ; free virtual = 9340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|LSTM_layer_i32 | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | PCIN>>17+A*B | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | PCIN>>17+A*B | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | PCIN>>17+A*B | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | PCIN>>17+A*B | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | PCIN>>17+A*B | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_layer_i32 | PCIN>>17+A*B | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|out_layer_i32  | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|out_layer_i32  | PCIN>>17+A*B | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|out_layer_i32  | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|out_layer_i32  | PCIN>>17+A*B | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |counter       |         1|
+|2     |tanh_lut      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |counter_bbox  |     1|
+|2     |tanh_lut_bbox |     1|
+|3     |BUFG          |     1|
+|4     |CARRY4        |    77|
+|5     |DSP48E1       |    16|
+|6     |LUT1          |     1|
+|7     |LUT2          |   327|
+|8     |LUT3          |   198|
+|9     |LUT4          |   121|
+|10    |LUT5          |   199|
+|11    |LUT6          |   147|
+|12    |MUXF7         |    32|
+|13    |FDCE          |   964|
+|14    |IBUF          |   168|
+|15    |OBUF          |    39|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2401.648 ; gain = 677.258 ; free physical = 175 ; free virtual = 9340
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2401.648 ; gain = 524.477 ; free physical = 175 ; free virtual = 9340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2401.656 ; gain = 677.258 ; free physical = 175 ; free virtual = 9340
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2401.656 ; gain = 0.000 ; free physical = 517 ; free virtual = 9682
+INFO: [Netlist 29-17] Analyzing 125 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2457.676 ; gain = 0.000 ; free physical = 522 ; free virtual = 9687
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7fa17732
+INFO: [Common 17-83] Releasing license: Synthesis
+137 Infos, 29 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 2457.676 ; gain = 1059.387 ; free physical = 522 ; free virtual = 9687
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2001.972; main = 1612.727; forked = 438.896
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3498.602; main = 2457.680; forked = 1096.949
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2481.688 ; gain = 0.000 ; free physical = 522 ; free virtual = 9687
+INFO: [Common 17-1381] The checkpoint '/home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/synth_1/LSTM_net_i32.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file LSTM_net_i32_utilization_synth.rpt -pb LSTM_net_i32_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 16 14:50:11 2024...

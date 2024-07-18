@@ -1,8 +1,112 @@
-Vivado Simulator v2024.1
+Vivado Simulator v2024.1.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_13 -L c_reg_fd_v12_0_9 -L xbip_dsp48_wrapper_v3_0_6 -L xbip_pipe_v3_0_9 -L xbip_dsp48_addsub_v3_0_9 -L xbip_addsub_v3_0_9 -L c_addsub_v12_0_18 -L c_gate_bit_v12_0_9 -L xbip_counter_v3_0_9 -L c_counter_binary_v12_0_19 -L secureip -L xpm --snapshot net_test_behav xil_defaultlib.net_test -log elaborate.log 
-Using 2 slave threads.
+Running: /home/alessandro/Tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xbip_utils_v3_0_13 -L c_reg_fd_v12_0_9 -L xbip_dsp48_wrapper_v3_0_6 -L xbip_pipe_v3_0_9 -L xbip_dsp48_addsub_v3_0_9 -L xbip_addsub_v3_0_9 -L c_addsub_v12_0_18 -L c_gate_bit_v12_0_9 -L xbip_counter_v3_0_9 -L c_counter_binary_v12_0_19 -L secureip -L xpm --snapshot net_test_behav xil_defaultlib.net_test -log elaborate.log 
+Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.mytypes
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xil_defaultlib.package_float32
+Compiling package c_counter_binary_v12_0_19.c_counter_binary_v12_0_19_viv_co...
+Compiling package xbip_utils_v3_0_13.xbip_utils_v3_0_13_pkg
+Compiling package xbip_counter_v3_0_9.xbip_counter_v3_0_9_viv_comp
+Compiling package ieee.std_logic_unsigned
+Compiling package xbip_counter_v3_0_9.xbip_counter_v3_0_9_pkg
+Compiling package c_counter_binary_v12_0_19.c_counter_binary_v12_0_19_pkg
+Compiling package c_addsub_v12_0_18.c_addsub_v12_0_18_pkg_legacy
+Compiling package c_reg_fd_v12_0_9.c_reg_fd_v12_0_9_viv_comp
+Compiling package c_addsub_v12_0_18.c_addsub_v12_0_18_pkg
+Compiling package xil_defaultlib.lzc_wire
+Compiling package xil_defaultlib.fp_wire
+Compiling package xil_defaultlib.fp_func
+Compiling package xil_defaultlib.lzc_lib
+Compiling package xil_defaultlib.fp_lib
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,in...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,init_00="001...]
+Compiling architecture structure of entity xil_defaultlib.x_RAM_blk_mem_gen_prim_wrapper_init [x_ram_blk_mem_gen_prim_wrapper_i...]
+Compiling architecture structure of entity xil_defaultlib.x_RAM_blk_mem_gen_prim_width [x_ram_blk_mem_gen_prim_width_def...]
+Compiling architecture structure of entity xil_defaultlib.x_RAM_blk_mem_gen_generic_cstr [x_ram_blk_mem_gen_generic_cstr_d...]
+Compiling architecture structure of entity xil_defaultlib.x_RAM_blk_mem_gen_top [x_ram_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.x_RAM_blk_mem_gen_v8_4_8_synth [x_ram_blk_mem_gen_v8_4_8_synth_d...]
+Compiling architecture structure of entity xil_defaultlib.x_RAM_blk_mem_gen_v8_4_8 [x_ram_blk_mem_gen_v8_4_8_default]
+Compiling architecture structure of entity xil_defaultlib.x_RAM [x_ram_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
+Compiling architecture structure of entity xil_defaultlib.w_RAM_blk_mem_gen_prim_wrapper_init [w_ram_blk_mem_gen_prim_wrapper_i...]
+Compiling architecture structure of entity xil_defaultlib.w_RAM_blk_mem_gen_prim_width [w_ram_blk_mem_gen_prim_width_def...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,dob_reg=1,in...]
+Compiling architecture structure of entity xil_defaultlib.\w_RAM_blk_mem_gen_prim_wrapper_init__parameterized0\ [\w_RAM_blk_mem_gen_prim_wrapper_...]
+Compiling architecture structure of entity xil_defaultlib.\w_RAM_blk_mem_gen_prim_width__parameterized0\ [\w_RAM_blk_mem_gen_prim_width__p...]
+Compiling architecture structure of entity xil_defaultlib.w_RAM_blk_mem_gen_generic_cstr [w_ram_blk_mem_gen_generic_cstr_d...]
+Compiling architecture structure of entity xil_defaultlib.w_RAM_blk_mem_gen_top [w_ram_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.w_RAM_blk_mem_gen_v8_4_8_synth [w_ram_blk_mem_gen_v8_4_8_synth_d...]
+Compiling architecture structure of entity xil_defaultlib.w_RAM_blk_mem_gen_v8_4_8 [w_ram_blk_mem_gen_v8_4_8_default]
+Compiling architecture structure of entity xil_defaultlib.w_RAM [w_ram_default]
+Compiling architecture structural of entity c_reg_fd_v12_0_9.c_reg_fd_v12_0_9_viv [\c_reg_fd_v12_0_9_viv(c_width=4,...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_18.c_addsub_v12_0_18_lut6_legacy [\c_addsub_v12_0_18_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_18.c_addsub_v12_0_18_fabric_legacy [\c_addsub_v12_0_18_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_18.c_addsub_v12_0_18_legacy [\c_addsub_v12_0_18_legacy(c_fami...]
+Compiling architecture synth of entity c_counter_binary_v12_0_19.c_counter_binary_v12_0_19_legacy [\c_counter_binary_v12_0_19_legac...]
+Compiling architecture synth of entity c_counter_binary_v12_0_19.c_counter_binary_v12_0_19_viv [\c_counter_binary_v12_0_19_viv(c...]
+Compiling architecture xilinx of entity c_counter_binary_v12_0_19.c_counter_binary_v12_0_19 [\c_counter_binary_v12_0_19(c_xde...]
+Compiling architecture counter_arch of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift_register [shift_register_default]
+Compiling architecture behavior of entity xil_defaultlib.lzc_4 [lzc_4_default]
+Compiling architecture behavior of entity xil_defaultlib.lzc_8 [lzc_8_default]
+Compiling architecture behavior of entity xil_defaultlib.lzc_16 [lzc_16_default]
+Compiling architecture behavior of entity xil_defaultlib.lzc_32 [lzc_32_default]
+Compiling architecture behavior of entity xil_defaultlib.lzc_64 [lzc_64_default]
+Compiling architecture behavior of entity xil_defaultlib.lzc_128 [lzc_128_default]
+Compiling architecture behavior of entity xil_defaultlib.fp_ext [fp_ext_default]
+Compiling architecture behavior of entity xil_defaultlib.fp_cmp [fp_cmp_default]
+Compiling architecture behavior of entity xil_defaultlib.fp_rnd [fp_rnd_default]
+Compiling architecture behavior of entity xil_defaultlib.fp_cvt [fp_cvt_default]
+Compiling architecture behavior of entity xil_defaultlib.fp_sgnj [fp_sgnj_default]
+Compiling architecture behavior of entity xil_defaultlib.fp_max [fp_max_default]
+Compiling architecture behavior of entity xil_defaultlib.fp_fma [fp_fma_default]
+Compiling architecture behavior of entity xil_defaultlib.fp_exe [fp_exe_default]
+Compiling architecture behavior of entity xil_defaultlib.fp_unit [fp_unit_default]
+Compiling architecture rtl of entity xil_defaultlib.mac_f32 [mac_f32_default]
+Compiling architecture behavioral of entity xil_defaultlib.nregister [nregister_default]
+Compiling architecture rtl of entity xil_defaultlib.sum_f32 [sum_f32_default]
+Compiling architecture behavioral of entity xil_defaultlib.dflipflop [dflipflop_default]
+Compiling architecture behavioral of entity xil_defaultlib.dff_chain [\dff_chain(n=3)\]
+Compiling architecture rtl of entity xil_defaultlib.cnv_f2i [cnv_f2i_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(doa_reg=1,dob_reg=1,in...]
+Compiling architecture structure of entity xil_defaultlib.tanh_lut_blk_mem_gen_prim_wrapper_init [tanh_lut_blk_mem_gen_prim_wrappe...]
+Compiling architecture structure of entity xil_defaultlib.tanh_lut_blk_mem_gen_prim_width [tanh_lut_blk_mem_gen_prim_width_...]
+Compiling architecture structure of entity xil_defaultlib.tanh_lut_blk_mem_gen_generic_cstr [tanh_lut_blk_mem_gen_generic_cst...]
+Compiling architecture structure of entity xil_defaultlib.tanh_lut_blk_mem_gen_top [tanh_lut_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.tanh_lut_blk_mem_gen_v8_4_8_synth [tanh_lut_blk_mem_gen_v8_4_8_synt...]
+Compiling architecture structure of entity xil_defaultlib.tanh_lut_blk_mem_gen_v8_4_8 [tanh_lut_blk_mem_gen_v8_4_8_defa...]
+Compiling architecture structure of entity xil_defaultlib.tanh_lut [tanh_lut_default]
+Compiling architecture behavioral of entity xil_defaultlib.dff_chain [\dff_chain(n=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.LSTM_layer [lstm_layer_default]
+Compiling architecture behavioral of entity xil_defaultlib.dff_chain [\dff_chain(n=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.out_layer [out_layer_default]
+Compiling architecture behavioral of entity xil_defaultlib.dff_chain [\dff_chain(n=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.dff_chain [\dff_chain(n=2)\]
+Compiling architecture behavioral of entity xil_defaultlib.LSTM_net [lstm_net_default]
+Compiling architecture test of entity xil_defaultlib.net_test
+Built simulation snapshot net_test_behav

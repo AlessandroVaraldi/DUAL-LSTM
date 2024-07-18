@@ -1,24 +1,24 @@
 #-----------------------------------------------------------
-# Vivado v2024.1 (64-bit)
-# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
-# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
-# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Jun 25 13:36:50 2024
-# Process ID: 6308
-# Current directory: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/impl_1
-# Command line: vivado.exe -log LSTM_net.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source LSTM_net.tcl -notrace
-# Log file: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/impl_1/LSTM_net.vdi
-# Journal file: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/impl_1\vivado.jou
-# Running On        :LAPTOP-OPG22R0F
-# Platform          :Windows Server 2016 or Windows 10
-# Operating System  :22631
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:57:50 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Tue Jul 16 14:50:23 2024
+# Process ID: 71845
+# Current directory: /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/impl_1
+# Command line: vivado -log LSTM_net_i32.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source LSTM_net_i32.tcl -notrace
+# Log file: /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/impl_1/LSTM_net_i32.vdi
+# Journal file: /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/impl_1/vivado.jou
+# Running On        :vivobook
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04 LTS
 # Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
-# CPU Frequency     :2803 MHz
+# CPU Frequency     :935.259 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
-# Host memory       :12564 MB
-# Swap memory       :7516 MB
-# Total Virtual     :20080 MB
-# Available Virtual :5432 MB
+# Host memory       :12223 MB
+# Swap memory       :4294 MB
+# Total Virtual     :16517 MB
+# Available Virtual :11493 MB
 #-----------------------------------------------------------
-source LSTM_net.tcl -notrace
+source LSTM_net_i32.tcl -notrace

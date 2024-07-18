@@ -1,89 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-3" LaunchTime="1719314896">
-  <File Type="ROUTE-PWR" Name="LSTM_net_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="LSTM_net.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="LSTM_net_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="LSTM_net_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="LSTM_net_rqa_opted.pb"/>
-  <File Type="BITSTR-MMI" Name="LSTM_net.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="LSTM_net_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="LSTM_net_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="LSTM_net_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="LSTM_net_opt.dcp"/>
-  <File Type="OPT-DRC" Name="LSTM_net_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="LSTM_net.hwdef"/>
-  <File Type="PWROPT-DCP" Name="LSTM_net_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="LSTM_net_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="LSTM_net_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="LSTM_net_placed.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-3" LaunchTime="1721134179">
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="LSTM_net_i32_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="LSTM_net_i32_routed.rqs"/>
+  <File Type="RBD_FILE" Name="LSTM_net_i32.rbd"/>
+  <File Type="NPI_FILE" Name="LSTM_net_i32.npi"/>
+  <File Type="RNPI_FILE" Name="LSTM_net_i32.rnpi"/>
+  <File Type="CFI_FILE" Name="LSTM_net_i32.cfi"/>
+  <File Type="RCFI_FILE" Name="LSTM_net_i32.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="LSTM_net_i32_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="LSTM_net_i32_boot.pdi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="LSTM_net_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="LSTM_net_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="LSTM_net_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="LSTM_net_methodology_drc_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="LSTM_net_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="LSTM_net_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="LSTM_net_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="LSTM_net_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="LSTM_net_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="LSTM_net_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="LSTM_net_i32_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="LSTM_net_i32_postroute_physopt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="LSTM_net_i32_physopt.dcp"/>
   <File Type="PLACE-IO" Name="LSTM_net_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="LSTM_net_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="LSTM_net_utilization_placed.rpt"/>
+  <File Type="OPT-DRC" Name="LSTM_net_drc_opted.rpt"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="LSTM_net_i32.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="LSTM_net_i32.sysdef"/>
+  <File Type="BITSTR-MMI" Name="LSTM_net_i32.mmi"/>
+  <File Type="BITSTR-BMM" Name="LSTM_net_i32_bd.bmm"/>
   <File Type="PLACE-UTIL-PB" Name="LSTM_net_utilization_placed.pb"/>
+  <File Type="BG-BGN" Name="LSTM_net_i32.bgn"/>
+  <File Type="OPT-DCP" Name="LSTM_net_i32_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="LSTM_net_i32.hwdef"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BG-BIT" Name="LSTM_net_i32.bit"/>
+  <File Type="ROUTE-BUS-SKEW" Name="LSTM_net_bus_skew_routed.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="PA-TCL" Name="LSTM_net_i32.tcl"/>
+  <File Type="REPORTS-TCL" Name="LSTM_net_i32_reports.tcl"/>
+  <File Type="PLACE-UTIL" Name="LSTM_net_utilization_placed.rpt"/>
+  <File Type="BG-DRC" Name="LSTM_net_i32.drc"/>
   <File Type="PLACE-CTRL" Name="LSTM_net_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="LSTM_net_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="LSTM_net_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="LSTM_net.bin"/>
-  <File Type="PLACE-TIMING" Name="LSTM_net_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="LSTM_net_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="LSTM_net_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="LSTM_net_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="LSTM_net.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="LSTM_net_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="LSTM_net_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="LSTM_net_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="LSTM_net.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="LSTM_net_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="LSTM_net_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="LSTM_net_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="LSTM_net_routed_bb.dcp"/>
+  <File Type="PDI-FILE" Name="LSTM_net_i32.pdi"/>
+  <File Type="RDI-RDI" Name="LSTM_net_i32.vdi"/>
+  <File Type="BG-BIN" Name="LSTM_net_i32.bin"/>
+  <File Type="PLACE-DCP" Name="LSTM_net_i32_placed.dcp"/>
+  <File Type="BITSTR-MSK" Name="LSTM_net_i32.msk"/>
+  <File Type="PWROPT-DCP" Name="LSTM_net_i32_pwropt.dcp"/>
+  <File Type="BITSTR-RBT" Name="LSTM_net_i32.rbt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="LSTM_net_i32_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-NKY" Name="LSTM_net_i32.nky"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="LSTM_net_i32_incremental_reuse_pre_placed.rpt"/>
   <File Type="ROUTE-DRC" Name="LSTM_net_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="LSTM_net_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="LSTM_net_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="LSTM_net_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="LSTM_net_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="LSTM_net_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="LSTM_net_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="LSTM_net_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="LSTM_net_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="LSTM_net_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="LSTM_net_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="LSTM_net_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="LSTM_net_i32_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="LSTM_net_i32_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="LSTM_net_i32_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="LSTM_net_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="LSTM_net_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-PB" Name="LSTM_net_i32_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="LSTM_net_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="LSTM_net_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="LSTM_net_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="LSTM_net_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="LSTM_net_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="LSTM_net_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="LSTM_net_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="LSTM_net_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="LSTM_net_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="LSTM_net_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="LSTM_net_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="LSTM_net_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="LSTM_net.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="LSTM_net_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="LSTM_net_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="LSTM_net.nky"/>
-  <File Type="BITSTR-BMM" Name="LSTM_net_bd.bmm"/>
-  <File Type="PDI-FILE" Name="LSTM_net.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="LSTM_net_boot.pdi"/>
-  <File Type="PL-PDI-FILE" Name="LSTM_net_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="LSTM_net.rcfi"/>
-  <File Type="CFI_FILE" Name="LSTM_net.cfi"/>
-  <File Type="RNPI_FILE" Name="LSTM_net.rnpi"/>
-  <File Type="NPI_FILE" Name="LSTM_net.npi"/>
-  <File Type="RBD_FILE" Name="LSTM_net.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="LSTM_net.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="LSTM_net.sysdef"/>
-  <File Type="BG-BGN" Name="LSTM_net.bgn"/>
-  <File Type="BG-DRC" Name="LSTM_net.drc"/>
-  <File Type="RDI-RDI" Name="LSTM_net.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="LSTM_net_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="LSTM_net_postroute_physopted.rqs"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/counter/counter.xci">
@@ -93,37 +79,19 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/myTypes.vhd">
+    <File Path="$PSRCDIR/sources_1/new/package_int32.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/LSTM_layer.vhd">
+    <File Path="$PSRCDIR/sources_1/new/LSTM_layer_i32.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_wire.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/fp_wire.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/fp_func.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/cnv_f2i.vhd">
+    <File Path="$PSRCDIR/sources_1/new/cnv_i32.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -141,115 +109,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/fp_cmp.vhd">
+    <File Path="$PSRCDIR/sources_1/new/mac_i32.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/fp_cvt.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/fp_exe.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/fp_ext.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/fp_fma.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_lib.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/fp_lib.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/fp_max.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/fp_rnd.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/fp_sgnj.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/fp_unit.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_128.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_16.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_32.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_4.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_64.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_8.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/mac_f32.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/out_layer.vhd">
+    <File Path="$PSRCDIR/sources_1/new/out_layer_i32.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -267,14 +133,210 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/sum_i32.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LSTM_net_i32.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/myTypes.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/package_float32.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LSTM_layer.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_wire.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/fp_wire.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/fp_func.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cnv_f2i.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/fp_cmp.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/fp_cvt.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/fp_exe.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/fp_ext.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/fp_fma.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_lib.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/fp_lib.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/fp_max.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/fp_rnd.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/fp_sgnj.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/fp_unit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_128.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_16.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_32.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_4.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_64.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fpu/lzc_8.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mac_f32.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/out_layer.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/sum_f32.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/LSTM_net.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -311,9 +373,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/init_1/tanh_values_cut.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="LSTM_net"/>
+      <Option Name="TopModule" Val="LSTM_net_i32"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -358,6 +426,7 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="tanh_lut"/>
 </GenRun>

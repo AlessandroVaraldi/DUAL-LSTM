@@ -23,7 +23,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-use work.myTypes.all;
+use work.package_float32.all;
     
 entity LSTM_layer is
     port
@@ -32,156 +32,66 @@ entity LSTM_layer is
 		reset			: in  std_logic;
 		clear			: in  std_logic;
 		start			: in  std_logic;
-		input			: in  data32;
-		weight			: in  weight32;
-		h_out			: out data32;
+		input			: in  data;
+		weigh			: in  weight;
+		h_out			: out data;
 		done			: out std_logic
 	);
 end LSTM_layer;
 
 architecture Behavioral of LSTM_layer is
 
-component mac_f32 is
-	port
-	(
-		reset   : in  std_logic;
-		clock   : in  std_logic;
-		clken	: in  std_logic;	
-		data1	: in  std_logic_vector (31 downto 0);		
-		data2	: in  std_logic_vector (31 downto 0);	
-		data3	: in  std_logic_vector (31 downto 0);	
-		d_out	: out std_logic_vector (31 downto 0);	
-		flags  	: out std_logic_vector(4 downto 0);
-		ready  	: out std_logic
-	);
-end component;
+    signal maca1,maca2,maca3,macao: data := (others => '0');
+    signal macb1,macb2,macb3,macbo: data := (others => '0');
+    
+    signal xmac,hmac,smac,tanh,sigm,s_new: data := (others => '0');
+    
+    signal sum: data := (others => '0');
+    signal modop: std_logic := '0';
+    
+    signal fpu1,fpu2,fpuo,mul: data := (others => '0');
+    
+    signal reg_cl: std_logic := '0';
+    
+    signal rea_en: std_logic := '0';
+    signal rea_in,rea_re: data := (others => '0');
+    
+    signal reb_en: std_logic := '0';
+    signal reb_in,reb_re: data := (others => '0');
+    
+    signal rec_en: std_logic := '0';
+    signal rec_in,rec_re: data := (others => '0');
+    
+    signal ref_en: std_logic := '0';
+    signal ref_in,ref_re: data := (others => '0');
+    
+    signal rei_en: std_logic := '0';
+    signal rei_in,rei_re: data := (others => '0');
+    
+    signal rez_en: std_logic := '0';
+    signal rez_in,rez_re: data := (others => '0');
+    
+    signal reo_en,reo_cl: std_logic := '0';
+    signal reo_in,reo_re: data := (others => '0');
+    
+    signal reh_en: std_logic := '0';
+    signal reh_in,reh_re: data := (others => '0');
+    
+    signal res_en: std_logic := '0';
+    signal res_in,res_re: data := (others => '0');
+    
+    signal lut_rd,lut_wr: std_logic := '0';
+    signal lut_ad: data := (others => '0');
+    signal lut_re: data := (others => '0');
 
-signal maca1,maca2,maca3,macao: data32 := (others => '0');
-signal macb1,macb2,macb3,macbo: data32 := (others => '0');
-
-signal xmac,hmac,smac,tanh,sigm,s_new: data32 := (others => '0');
-
-component sum_f32 is
-	port
-	(
-		reset   : in  std_logic;
-		clock   : in  std_logic;
-		clken	: in  std_logic;
-		modop   : in  std_logic;	
-		data1	: in  std_logic_vector (31 downto 0);		
-		data2	: in  std_logic_vector (31 downto 0);	
-		d_out	: out std_logic_vector (31 downto 0);	
-		flags  	: out std_logic_vector(4 downto 0);
-		ready  	: out std_logic
-	);
-end component;
-
-signal sum: data32 := (others => '0');
-signal modop: std_logic := '0';
-
-component mul_f32 is
-	port
-	(
-		reset   : in  std_logic;
-		clock   : in  std_logic;
-		clken	: in  std_logic;		
-		data1	: in  std_logic_vector (31 downto 0);		
-		data2	: in  std_logic_vector (31 downto 0);	
-		d_out	: out std_logic_vector (31 downto 0);	
-		flags  	: out std_logic_vector(4 downto 0);
-		ready  	: out std_logic
-	);
-end component;
-
-signal fpu1,fpu2,fpuo,mul: data32 := (others => '0');
-
-component cnv_f2i is
-	port
-	(
-		reset   : in  std_logic;
-		clock   : in  std_logic;
-		clken	: in  std_logic;	
-		data1	: in  std_logic_vector (31 downto 0);	
-		d_out	: out std_logic_vector (31 downto 0);	
-		flags  	: out std_logic_vector(4 downto 0);
-		ready  	: out std_logic
-	);
-end component;
-
-component nregister is 
-	port 
-	(
-		clock		: in  std_logic;
-		en			: in  std_logic;
-		aclr		: in  std_logic;
- 		sclr		: in  std_logic;
- 		d			: in  std_logic_vector (31 downto 0);
- 		q			: out std_logic_vector (31 downto 0)
- 	);
-end component;
-
-signal reg_cl: std_logic := '0';
-
-signal rea_en: std_logic := '0';
-signal rea_in,rea_re: data32 := (others => '0');
-
-signal reb_en: std_logic := '0';
-signal reb_in,reb_re: data32 := (others => '0');
-
-signal rec_en: std_logic := '0';
-signal rec_in,rec_re: data32 := (others => '0');
-
-signal ref_en: std_logic := '0';
-signal ref_in,ref_re: data32 := (others => '0');
-
-signal rei_en: std_logic := '0';
-signal rei_in,rei_re: data32 := (others => '0');
-
-signal rez_en: std_logic := '0';
-signal rez_in,rez_re: data32 := (others => '0');
-
-signal reo_en,reo_cl: std_logic := '0';
-signal reo_in,reo_re: data32 := (others => '0');
-
-signal reh_en: std_logic := '0';
-signal reh_in,reh_re: data32 := (others => '0');
-
-signal res_en: std_logic := '0';
-signal res_in,res_re: data32 := (others => '0');
-
-COMPONENT tanh_lut
-  PORT (
-    clka : IN STD_LOGIC;
-    ena : IN STD_LOGIC;
-    addra : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-    douta : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) 
-  );
-END COMPONENT;
-
-signal lut_rd,lut_wr: std_logic := '0';
-signal lut_ad: std_logic_vector (31 downto 0) := (others => '0');
-signal lut_re: std_logic_vector (31 downto 0) := (others => '0');
-
-component dff_chain is
-	generic (
-		N : integer := 8
-   );
-   port (
-		clock : in std_logic;
-		reset : in std_logic;
-		start : in std_logic;
-		q : out std_logic_vector(N-1 downto 0)
-	);
-end component;
-
-signal sgn: std_logic_vector (3 downto 0) := (others => '0');
-signal q: std_logic_vector (31 downto 0) := (others => '0');
+    signal sgn: std_logic_vector (3 downto 0) := (others => '0');
+    signal q: std_logic_vector(31 downto 0) := (others => '0');
 
 begin
 				
 	maca1 <= tanh when q(8) = '1' or q(9) = '1' or q(10) = '1' or q(11) = '1' else input;
-	maca2 <= X"42000000" when q(8) = '1' or q(9) = '1' or q(10) = '1' or q(11) = '1' else weight.wx;
-	maca3 <= X"42000000" when q(8) = '1' or q(9) = '1' or q(10) = '1' or q(11) = '1' else weight.bx;
+	maca2 <= X"42000000" when q(8) = '1' or q(9) = '1' or q(10) = '1' or q(11) = '1' else weigh.wx;
+	maca3 <= X"42000000" when q(8) = '1' or q(9) = '1' or q(10) = '1' or q(11) = '1' else weigh.bx;
 	
 	u0: mac_f32
 		port map (
@@ -210,8 +120,8 @@ begin
 		);
 		
 	macb1 <= res_re when q(14) = '1' else reh_re;
-	macb2 <= ref_re when q(14) = '1' else weight.wh;
-	macb3 <= rei_re when q(14) = '1' else weight.bh;
+	macb2 <= ref_re when q(14) = '1' else weigh.wh;
+	macb3 <= rei_re when q(14) = '1' else weigh.bh;
 		
 	u1: mac_f32
 		port map (
@@ -251,16 +161,16 @@ begin
             clken   =>  '1'     ,
             modop   =>  modop   ,
             data1   =>  fpu1    ,
-            data2   =>  fpu2    ,
+            data2   =>  fpu2   ,
             d_out   =>  fpuo
 		);
 	
 	sum <= fpuo;
 	mul <= fpuo;
 		
-	rec_in <= '0' & smac (30 downto 0) when q(16) = '1' else '0' & sum (30 downto 0);
+	rec_in <= '0' & smac(30 downto 0) when q(16) = '1' else '0' & sum(30 downto 0);
 	
-	sgn (0) <= sum (31) or smac (31);
+	sgn (0) <= sum(31) or smac(31);
 	
 	f0: dff_chain
 		generic map (n => 3)
@@ -294,12 +204,12 @@ begin
 		port map (
 			clka	    => clock,
 			ena         => lut_rd,
-			addra       => lut_ad (7 downto 0),
+			addra       => lut_ad(7 downto 0),
 			douta		=> lut_re
 		);
 		
-    tanh (31) <= sgn (3);
-    tanh (30 downto 0) <= lut_re (30 downto 0);
+    tanh(31) <= sgn (3);
+    tanh(30 downto 0) <= lut_re(30 downto 0);
     
 	ref_in <= sigm;
 		

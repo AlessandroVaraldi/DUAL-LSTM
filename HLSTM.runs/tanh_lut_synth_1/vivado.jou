@@ -1,24 +1,24 @@
 #-----------------------------------------------------------
-# Vivado v2024.1 (64-bit)
-# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
-# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
-# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Jun 17 14:36:00 2024
-# Process ID: 7684
-# Current directory: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/tanh_lut_synth_1
-# Command line: vivado.exe -log tanh_lut.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tanh_lut.tcl
-# Log file: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/tanh_lut_synth_1/tanh_lut.vds
-# Journal file: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/tanh_lut_synth_1\vivado.jou
-# Running On        :LAPTOP-OPG22R0F
-# Platform          :Windows Server 2016 or Windows 10
-# Operating System  :22631
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:57:50 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Thu Jul 18 10:03:01 2024
+# Process ID: 11304
+# Current directory: /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/tanh_lut_synth_1
+# Command line: vivado -log tanh_lut.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tanh_lut.tcl
+# Log file: /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/tanh_lut_synth_1/tanh_lut.vds
+# Journal file: /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.runs/tanh_lut_synth_1/vivado.jou
+# Running On        :vivobook
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04 LTS
 # Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
-# CPU Frequency     :2803 MHz
+# CPU Frequency     :3100.000 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
-# Host memory       :12564 MB
-# Swap memory       :7247 MB
-# Total Virtual     :19812 MB
-# Available Virtual :6457 MB
+# Host memory       :12222 MB
+# Swap memory       :4294 MB
+# Total Virtual     :16517 MB
+# Available Virtual :13173 MB
 #-----------------------------------------------------------
 source tanh_lut.tcl -notrace

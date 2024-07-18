@@ -1,11 +1,11 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Mon Jun 17 14:37:09 2024
-// Host        : LAPTOP-OPG22R0F running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2024.1.1 (lin64) Build 5094488 Fri Jun 14 08:57:50 MDT 2024
+// Date        : Thu Jul 18 10:03:43 2024
+// Host        : vivobook running 64-bit Ubuntu 24.04 LTS
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.gen/sources_1/ip/tanh_lut/tanh_lut_stub.v
+//               /home/alessandro/OneDrive/Documenti/Politecnico/Dottorato/Progetti/Vivado/DUAL-LSTM/HLSTM.gen/sources_1/ip/tanh_lut/tanh_lut_stub.v
 // Design      : tanh_lut
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcsg324-3
@@ -14,7 +14,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* x_core_info = "blk_mem_gen_v8_4_8,Vivado 2024.1" *)
+(* x_core_info = "blk_mem_gen_v8_4_8,Vivado 2024.1.1" *)
 module tanh_lut(clka, ena, addra, douta)
 /* synthesis syn_black_box black_box_pad_pin="ena,addra[7:0],douta[31:0]" */
 /* synthesis syn_force_seq_prim="clka" */;

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="w_RAM_synth_1" LaunchPart="xc7a35tcsg324-3" LaunchTime="1718630893">
+  <File Type="RDS-DCP" Name="w_RAM.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="w_RAM_utilization_synth.pb"/>
   <File Type="PA-TCL" Name="w_RAM.tcl"/>
+  <File Type="RDS-UTIL" Name="w_RAM_utilization_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="w_RAM_reports.tcl"/>
   <File Type="RDS-RDS" Name="w_RAM.vds"/>
-  <File Type="RDS-UTIL" Name="w_RAM_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="w_RAM_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="w_RAM.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/w_RAM" RelGenDir="$PGENDIR/w_RAM">
     <File Path="$PSRCDIR/sources_1/ip/w_RAM/w_RAM.xci">
       <FileInfo>

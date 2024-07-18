@@ -23,7 +23,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-use work.mytypes.all;
+use work.package_float32.all;
 
 entity LSTM_net is
     port
@@ -46,22 +46,22 @@ architecture Behavioral of LSTM_net is
 signal cycle: std_logic := '0';
 
 component LSTM_layer is
-	port
+    port
 	(
 		clock			: in  std_logic;
 		reset			: in  std_logic;
 		clear			: in  std_logic;
 		start			: in  std_logic;
-		input			: in  data32;
-		weight			: in  weight32;
-		h_out			: out data32;
+		input			: in  data;
+		weigh			: in  weight;
+		h_out			: out data;
 		done			: out std_logic
 	);
 end component;
 
 signal clear,LSTM_st,LSTM_do: std_logic := '0';
-signal weight: weight32 := (others => (others => '0'));
-signal h_out,h_in: data32 := (others => '0');
+signal weight: weight := (others => (others => '0'));
+signal h_out,h_in: data := (others => '0');
 
 component out_layer is
     port
@@ -70,9 +70,9 @@ component out_layer is
 		reset			: in  std_logic;
 		clear			: in  std_logic;
 		start			: in  std_logic;
-		input			: in  data32;
+		input			: in  data;
 		--wb			: in  weight32;
-		d_out			: out data32;
+		d_out			: out data;
 		done			: out std_logic
 	);
 end component;
@@ -199,7 +199,7 @@ begin
 			clear    => clear    ,
 			start    => LSTM_st  ,
 			input    => x        ,
-			weight   => weight   ,               
+			weigh    => weight   ,               
 			h_out    => h_out    ,
 			done     => LSTM_do		
 		);
@@ -218,7 +218,6 @@ begin
 	
 	h_in <= reg_re;
 	
-	-- RELUUUUUU --	
 	u1: out_layer
 	   port map (
 	       clock   => clock    ,

@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../HLSTM.gen/sources_1/ip/tanh_lut/tanh_lut_sim_netlist.vhdl" \
+
+# Do not sort compile order
+nosort
